@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Fazer jogador1 digitar um número
+
+        Fazer jogador2 digitar outro número
+
+        Se forem iguais mostrar mensagem 'empate' e encerrar o programa
+
+        Se forem diferentes, sortear um número entre 0 e 1. Se o número sorteado for 0, ganha quem escolher o número MENOR, senão, ganha quem escolher o número MAIOR.    
+
+        */
+
+    </style>
+</head>
+<body>
+    <script>
+        let jogador1 = parseInt(prompt("Jogador 1 Digite um número"));//Fazer jogador1 digitar um número
+        let jogador2 = parseInt(prompt("Jogador 2 Digite um número"));//Fazer jogador2 digitar um número
+        
+        if (jogador1 === jogador2) {
+            alert("Ouve um empate!");
+//Se forem iguais mostrar mensagem 'empate' e encerrar o programa
+        } else {
+                let numeroSorteado = parseInt(Math.random() * 2);
+                //Se forem diferentes, sortear um número entre 0 e 1
+            
+            if (numeroSorteado === 0) {//Se o número sorteado for 0, ganha quem escolher o número MENOR
+                if (jogador1 < jogador2) {
+                    alert("Jogador 1 é o Vencedor!")
+                } else {
+                    alert("Joagador 2 é o Vencedor!");
+                }
+            } else {//senão, ganha quem escolher o número MAIOR.
+                if (jogador1 > jogador2) {
+                    alert("Jogador 1 é o Vencedor!")
+                } else {
+                    alert("Jogador 2 é o Vencedor!");
+                }
+            }
+        }
+    </script>
+</body>
+</html>
