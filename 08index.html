@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Problema</p>
+    <p>Pedir para o usuário digitar dois números e mostrar uma mensagem informando se foi aprovado ou não.
+    </p>
+    <p>A nota de corte é 5.</p>
+    <p>Contudo, se qualquer uma das notas for (1), reprova automaticamente</p>
+    <script>
+        let n1 = parseFloat(prompt("Digite um número"));
+        let n2 = parseFloat(prompt("Digite outro número"));
+        let media = (n1 + n2) / 2;
+        if (media > 5 && n1 > 1 && n2 > 1) {
+            alert("Você foi aprovado!");
+        } else {
+            alert("Você foi reprovado!");
+        }
+
+        // Outra forma de resolver //
+
+     /*   if (n1 <= 1 || n2 <= 1 || media <= 5 ) {
+            alert("Você foi reprovado!");
+        } else {
+            alert("Você foi aprovado!");
+        }
+     */
+    </script>
+</body>
+</html>
