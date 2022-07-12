@@ -11,7 +11,7 @@ resultado.innerHTML = numero;
 function caucular(simbolo) {
     let n = parseFloat(prompt("Digite outro número"));
     
-    switch (simbolo) {
+    switch(simbolo) {
         case '+':
             numero += n;
             break;
@@ -24,8 +24,7 @@ function caucular(simbolo) {
         case '/':
             numero /= n;
             break;
-            default:
-                alert("Invalid parameter");
+            
     }
     escreve();
 }
