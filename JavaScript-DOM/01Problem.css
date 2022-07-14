@@ -1,0 +1,14 @@
+body {
+    background-color: rgba(0, 0, 0, 0.342);
+}
+#msg {
+    background-color: brown;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.801);
+    width: 70%;
+    padding: 10px;
+}
+#msg:hover {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.562), rgba(0, 0, 255, 0.774));
+}

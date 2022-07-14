@@ -1,0 +1,22 @@
+table {
+    border: 1px solid black;
+    width: 90%;
+}
+td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+td:hover {
+    background-color: rgb(209, 223, 248);
+}
+th {
+    border: 1px solid rgb(129, 0, 0);
+    font-size: 1.4em;
+    padding: 10px;
+}
+th:hover {
+    background-color: rgb(187, 138, 138);
+}
