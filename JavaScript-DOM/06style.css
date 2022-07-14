@@ -1,0 +1,105 @@
+body {
+    background-color: rgb(92, 153, 153);
+    margin: auto;
+    text-align: center;
+}
+h1 {
+    font-family: sans-serif;
+    color: aliceblue;
+}
+p {
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2 {
+    font-size: 2em;
+    color: aliceblue;
+}
+p {
+    background-color: rgba(240, 255, 255, 0.473);
+    padding: 10px 20px 10px 20px;
+    display: inline-block;
+}
+
+
+
+
+
+#botao {
+    background-color: brown;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1rem;
+    color: rgba(240, 248, 255, 0.781);
+    text-transform: uppercase;
+    box-shadow: 1px 1px 2px black;
+    animation: animaçaobotao 5s linear infinite;
+}
+
+@keyframes animaçaobotao {
+    0% {
+        transform: scale(1) rotate(360deg);
+    }
+    5% {
+        box-shadow: 2px 2px  black;
+    }
+    10%{
+        box-shadow: 3px 3px black;
+    }
+    15% {
+        box-shadow: 4px 4px black;
+    }
+    20% {
+        box-shadow: 5px 5px black;
+    }
+    25% {
+        box-shadow: 6px 6px black;
+    }
+    30% {
+        box-shadow: 5px 7px black;
+    }
+    35% {
+        box-shadow: 4px 8px black;
+    }
+    40% {
+        box-shadow: 3px 9px black;
+    }
+    45% {
+        box-shadow: 2px 10px black;
+    }
+    50% {
+        box-shadow: -1px 11px black;
+    }
+    55% {
+        box-shadow: -2px -2px black;
+    }
+    60% {
+        box-shadow: -3px -3px black;
+    }
+    65% {
+        box-shadow: -4px -4px black;
+    }
+    70% {
+        box-shadow: -5px -5px black;
+    }
+    75% {
+        box-shadow: -6px -6px black;
+    }
+    80% {
+        box-shadow: -5px -5px black;
+    }
+    85% {
+        box-shadow: -4px -4px black;
+    }
+    90% {
+        box-shadow: -3px -3px black;
+    }
+    95% {
+        box-shadow: -2px -2px  black;
+    }
+    100% {
+        box-shadow: -2px -2px  black;
+    }
+}

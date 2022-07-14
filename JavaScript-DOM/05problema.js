@@ -14,7 +14,7 @@
         n3 = pegaNota(tds[3]);
         n4 = pegaNota(tds[4]);
 
-        media = caucularMedia(n1, n2, n3, n4);
+        media = calcularMedia(n1, n2, n3, n4);
 
         linhaAluno.querySelector('.aluno-media').textContent = media;
 

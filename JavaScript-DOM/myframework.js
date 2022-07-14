@@ -1,4 +1,4 @@
-function caucularMedia() {
+function calcularMedia() {
     let total = 0;
     let qtd = arguments.length;
     let x = 0;
