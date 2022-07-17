@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            display: block;
+            margin-bottom: 10px;
+        }
+        #check {
+            display: inline-block;
+        }
+        textarea {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h3>Problema CheckBox</h3>
+    <p>Permitir o envio do formulário somente após o usuário aceitar os termos do contrato (checkBox). <br>
+    Para este exemplo, vamos habilitar ou desabilitar o botão dependendo do checkbox.</p>
+
+     <form action="#">
+         <label for="nome">Nome Completo</label>
+         <input type="text">
+         <label for="senha">Senha</label>
+         <input type="password">
+         <textarea cols="30" rows="10" readonly>Terms of use definition (noun) 
+            Terms of use are the rules, specifications, and requirements for the use of a product or service. They serve as a contract between the product or service provider and user. The phrase is sometimes used interchangeably with “terms of service” or “terms and conditions”.
+        </textarea>
+         <input id="check" type="checkbox">Li e aceito os termos desse contrato.
+         <input id="submit" type="submit" value="Enviar">
+     </form>  
+    <script src="04CheckBox.js"></script>
+</body>
+</html>
