@@ -8,15 +8,22 @@
     $button.addEventListener('click', addTask);
     $input.addEventListener('keyup', function(e){
         if (e.key === 'Enter') {
-            addTask();// add tarefa apertando tecla enter
+            addTask();
         }
     });
-    for (let i = 0; i < $lis.length; i++) {
-        addEvent($lis[i]);
+    
+    $lista.addEventListener('click', function(e){
+        if (e.target.nodeName === 'LI') {
+            removeTask(e.target);
+        }
+    });
+    function removeTask(li) {
+        if(confirm('Deseja realmente excluir a tarefa \n ' + li.textContent + '?')) {
+            console.log(li.parentNode);
+            li.parentNode.removeChild(li);
+        }
     }
-    function toggleDone() {
-        this.classList.toggle('tDone');
-    }
+
     function addTask(){
         let li = document.createElement('li');
         let text = document.createTextNode($input.value);
@@ -25,9 +32,5 @@
 
         $input.value = '';
         $input.focus();
-        addEvent(li);
-    }
-    function addEvent(li) {
-        li.addEventListener('click', toggleDone);
     }
 })()

@@ -1,27 +1,60 @@
 body {
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.76),rgba(255, 166, 0, 0.801),rgba(255, 255, 0, 0.753),rgba(0, 128, 0, 0.795),rgba(76, 0, 130, 0.788),rgba(238, 130, 238, 0.87));
+    background-image: url(./Study.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
 }
-
+h3, p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+}
+p {
+    background-color: rgba(0, 0, 0, 0.322);
+}
+h3 {
+    background-color: rgba(165, 42, 42, 0.445);
+    display: inline-block;
+    padding: 10px;
+}
 ul{
     border: 1px solid black;
     padding: 0;
     margin: 0;
-    background-color: rgb(194, 193, 193);
+    background-color: rgba(0, 0, 0, 0.63);
 }
 
 li {
     list-style: none;
     margin: 5px;
     padding: 5px;
-    background-color: dimgray;
-    color: aliceblue;
+    background-color: rgb(252, 252, 252);
+    color: rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
 }
 
 #txtTask, #btn {
     margin-top: 10px;
+    
+}
+#txtTask {
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+}
+#btn {
+    margin-left: 50px;
+    padding: 5px 20px;
+    background-color: rgba(255, 255, 255, 0.63);
+    border: none;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+#btn:hover {
+    background-color: rgba(165, 42, 42, 0.445);
+    color: aliceblue;
 }
 .tDone {
     text-decoration: line-through;
     color: #555;
-    cursor: pointer;
 }
